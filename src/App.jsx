@@ -22,6 +22,7 @@ function App() {
       .then(response => response.json())
       .then(responseData => {
         if (activeFetch) {
+          console.log(responseData.photos.photo);
           setPhotos(responseData.photos.photo);
           setLoading(false);
         }
@@ -29,12 +30,16 @@ function App() {
       .catch(err => console.log("Error fetching and parsing data", err))
   }, [query]);
 
+  const handleQueryChange = searchInput => {
+    setQuery(searchInput);
+  }
+
   return (
     <div className='container'>
-      <SearchForm />
+      <SearchForm changeQuery={handleQueryChange} />
       <MainNav />
       <Routes>
-        <Route path="/" element={<PhotoList />} />
+        <Route path="/" element={<PhotoList data={photos} />} />
         <Route path="/cats" element={<PhotoList />} />
         <Route path="/dogs" element={<PhotoList />} />
         <Route path="/computers" element={<PhotoList />} />
