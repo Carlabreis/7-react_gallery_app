@@ -51,6 +51,9 @@ function App() {
       ) : (
         <Routes>
           <Route path="/" element={<Navigate replace to="/birds" />} />
+          <Route path="/fish" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
+          <Route path="/birds" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
+          <Route path="/flowers" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
           <Route path="/:query" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
