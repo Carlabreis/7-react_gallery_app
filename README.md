@@ -1,8 +1,49 @@
-# React + Vite
+# 7-React-Gallery-App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- FEATURES -->
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Extra Credit
+
+-> Browser navigation works for the search route
+
+-> 404 error route added
+
+-> Loading indicator
+
+-> No matches message (if there are no results found by the search)
+
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+<!-- ![Product screenshot](<Screenshot 2023-10-27 at 5.40.11 PM.png>) -->
+<!-- ![Product screenshot](<Screenshot 2023-10-27 at 5.40.18 PM.png>) -->
+<!-- ![Product screenshot](<Screenshot 2023-10-27 at 5.40.40 PM.png>) -->
+
+For this project, I used React library to create an image gallery app.
+
+I applied some of the best practices of working with React, like using JSX to write markup-like syntax directly in my JS files and managing state in a container component that passes data down to reusable stateless components. Additionally, I got practice working with React-supportive tools like Vite and React Router.
+
+Using the powerful Vite build tool, I set up the initial project.
+
+Then I...
+
+- Used JavaScript and JSX to build out the gallery components in a modular fashion.
+- Used React Router to set up routes for three default topic pages and a search page.
+- Used the Fetch API or a tool like Axios to fetch data from the Flickr API and used it to display images in my app.
+- Added logic to handle the search and various requirements of the project.
+- Added to the supplied CSS to personalize the project.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- BUILT WITH -->
+
+### Built With
+
+HTML, CSS, JavaScript, and React
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
