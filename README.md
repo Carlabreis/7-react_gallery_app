@@ -18,9 +18,10 @@
 
 ## About The Project
 
-![Product screenshot](<Screenshot 2023-11-05 at 8.28.32 PM.png>)
-![Product screenshot](<Screenshot 2023-11-05 at 8.28.48 PM.png>)
-![Product screenshot](<Screenshot 2023-11-05 at 8.29.29 PM.png>)
+![Product screenshot](<main-page-redirect.png>)
+![Product screenshot](<search-result.png>)
+![Product screenshot](<no-result.png>)
+![Product screenshot](<page-not-found.png>)
 
 For this project, I used React library to create an image gallery app.
 

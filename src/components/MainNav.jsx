@@ -9,9 +9,9 @@ const MainNav = ({ changeQuery }) => {
   return (
     <nav className="main-nav">
         <ul>
-          <li><NavLink to='/cats' onClick={(e) => handleClick(e)} >Cats</NavLink></li>
-          <li><NavLink to='/dogs' onClick={(e) => handleClick(e)} >Dogs</NavLink></li>
-          <li><NavLink to='/computers' onClick={(e) => handleClick(e)} >Computers</NavLink></li>
+          <li><NavLink to='/fish' onClick={(e) => handleClick(e)} >Fish</NavLink></li>
+          <li><NavLink to='/mountains' onClick={(e) => handleClick(e)} >Mountains</NavLink></li>
+          <li><NavLink to='/flowers' onClick={(e) => handleClick(e)} >Flowers</NavLink></li>
         </ul>
       </nav>
   )
