@@ -8,6 +8,9 @@ import SearchForm from "./components/SearchForm";
 import MainNav from "./components/MainNav";
 import PhotoList from "./components/PhotoList";
 import PageNotFound from "./components/PageNotFound";
+import FishPhotoList from "./components/FishPhotoList";
+import BirdsPhotoList from "./components/BirdsPhotoList";
+import FlowersPhotoList from "./components/FlowersPhotoList";
 
 function App() {
 
@@ -51,10 +54,10 @@ function App() {
       ) : (
         <Routes>
           <Route path="/" element={<Navigate replace to="/birds" />} />
-          <Route path="/sun" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
-          <Route path="/moon" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
-          <Route path="/rain" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
-          <Route path="/:query" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
+          <Route path="/fish" element={<FishPhotoList data={photos} changeQuery={handleQueryChange} />} />
+          <Route path="/birds" element={<BirdsPhotoList data={photos} changeQuery={handleQueryChange} />} />
+          <Route path="/flowers" element={<FlowersPhotoList data={photos} changeQuery={handleQueryChange} />} />
+          <Route path="/search/:query" element={<PhotoList data={photos} changeQuery={handleQueryChange} />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       )}

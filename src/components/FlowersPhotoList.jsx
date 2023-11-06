@@ -1,16 +1,15 @@
-import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import PropTypes from "prop-types";
 
 import Photo from "./Photo";
 import NoPhotos from "./NoPhotos";
 
-const PhotoList = ({ data, changeQuery }) => {
-  let { query } = useParams();
+const FlowersPhotoList = ({ data, changeQuery }) => {
   let photos;
+  let flowers = "flowers";
 
   useEffect(() => {
-    changeQuery(query);
+    changeQuery(flowers);
   });
 
   if (data.length > 0) {
@@ -39,15 +38,15 @@ const PhotoList = ({ data, changeQuery }) => {
 
   return (
     <div className="photo-container">
-      <h2>{query}</h2>
+      <h2>Flowers</h2>
       <ul>{photos}</ul>
     </div>
   );
 };
 
-PhotoList.propTypes = {
+FlowersPhotoList.propTypes = {
   data: PropTypes.array.isRequired,
   changeQuery: PropTypes.func
 };
 
-export default PhotoList;
+export default FlowersPhotoList;

@@ -9,7 +9,7 @@ const SearchForm = ({ changeQuery }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     changeQuery(searchInput.current.value);
-    navigate(`${searchInput.current.value}`);
+    navigate(`search/${searchInput.current.value}`);
     e.currentTarget.reset();
   };
 
