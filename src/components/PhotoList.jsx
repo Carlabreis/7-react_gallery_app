@@ -1,30 +1,42 @@
-import React from "react";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import PropTypes from 'prop-types';
+
 
 import Photo from "./Photo";
 import NoPhotos from "./NoPhotos";
 
-const PhotoList = props => {
-  const results = props.data;
+const PhotoList = ({ data, changeQuery }) => {
+  let { query } = useParams();
   let photos;
 
-  {/* map thru data and render one photo component for each photo */}
-  if (results.length > 0) {
-    photos = results.map(image => <Photo key={image.id} url={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`} alt={`${image.title}`} />);
+  useEffect(() => {
+    changeQuery(query);
+  });
+
+  if (data.length > 0) {
+    photos = data.map((image) => (
+      <Photo
+        key={image.id}
+        url={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`}
+        alt={image.title}
+      />
+    ));
   } else {
-    {/* create NotFound component and render if no results found */}
-      photos = <NoPhotos />
+    photos = <NoPhotos />;
   }
 
   return (
     <div className="photo-container">
-    <h2>Results</h2>
-    <ul>
-      {photos}
-    </ul>
-  </div>
-  )
+      <h2>{query}</h2>
+      <ul>{photos}</ul>
+    </div>
+  );
 };
 
-//propTypes
+PhotoList.propTypes = {
+  data: PropTypes.array,
+  changeQuery: PropTypes.func
+};
 
 export default PhotoList;

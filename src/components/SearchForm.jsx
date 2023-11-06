@@ -1,11 +1,15 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types';
 
-const SearchForm = (props) => {
+const SearchForm = ({ changeQuery }) => {
   const searchInput = useRef(null);
+  let navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.changeQuery(searchInput.current.value);
+    changeQuery(searchInput.current.value);
+    navigate(`${searchInput.current.value}`);
     e.currentTarget.reset();
   };
 
@@ -34,6 +38,8 @@ const SearchForm = (props) => {
   );
 };
 
-// SearchForm.propTypes
+SearchForm.propTypes = {
+  changeQuery: PropTypes.func
+};
 
 export default SearchForm;
