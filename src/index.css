@@ -2,8 +2,10 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #3f4850;
+  /* added style */
   background-image: url('https://images.unsplash.com/photo-1682687982093-4773cb0dbc2e?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
+  /**/
 }
 
 h2 {

@@ -18,9 +18,9 @@
 
 ## About The Project
 
-<!-- ![Product screenshot](<Screenshot 2023-10-27 at 5.40.11 PM.png>) -->
-<!-- ![Product screenshot](<Screenshot 2023-10-27 at 5.40.18 PM.png>) -->
-<!-- ![Product screenshot](<Screenshot 2023-10-27 at 5.40.40 PM.png>) -->
+![Product screenshot](<Screenshot 2023-11-05 at 8.28.32 PM.png>)
+![Product screenshot](<Screenshot 2023-11-05 at 8.28.48 PM.png>)
+[Product screenshot](<Screenshot 2023-11-05 at 8.29.29 PM.png>)
 
 For this project, I used React library to create an image gallery app.
 
