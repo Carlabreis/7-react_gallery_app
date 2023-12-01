@@ -3,15 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
+  "scripts": { // contains commands that we can run for the project
+    "dev": "vite", // such as 'npm run dev' to start the project
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.2.0", // core react library
+    "react-dom": "^18.2.0", // it's what let react connect to and manipulate the dom, making it perfect for building web applications
     "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
